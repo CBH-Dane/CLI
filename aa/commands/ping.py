@@ -4,5 +4,6 @@ from aa.registry import Command, register
 class Ping(Command):
     name = "ping"
 
-    def execute(self) -> None:
+    def execute(self, args: list[str]) -> int: # args ignored
         print("ok")
+        return 0
